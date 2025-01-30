@@ -3,7 +3,7 @@ import Link from 'next/link'
 const Hero = () => {
   return (
     <div>
-         <div className='flex justify-center mt-6'>
+         <div className='flex justify-center pt-6'>
                 <div className='max-w-5xl'>
                     <div id='krypton' className="hero bg-white py-10  lg:p-10" >
                         <div className="hero-content flex-col px-10 lg:flex-row" >
