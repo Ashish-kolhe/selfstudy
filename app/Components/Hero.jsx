@@ -2,13 +2,13 @@ import React from 'react'
 import Link from 'next/link'
 const Hero = () => {
   return (
-    <div>
-         <div className='flex justify-center pt-6'>
+    <div className='bg-white'>
+         <div className='flex justify-center'>
                 <div className='max-w-5xl'>
                     <div id='krypton' className="hero bg-white py-10  lg:p-10" >
                         <div className="hero-content flex-col px-10 lg:flex-row" >
                             <div  className='max-w-sm text-center lg:text-left' >
-                            <h1 className="text-6xl  lg:text-8xl font-black text-gray-800"> <img src="./Dots.png" alt="" className=' -mb-96'/>MASTER SKILLS AT YOUR OWN PACE.</h1>
+                            <h1 className="text-6xl  lg:text-8xl font-black text-gray-800 mt-6"> <img src="./Dots.png" alt="" className=' -mb-96'/>MASTER SKILLS AT YOUR OWN PACE.</h1>
                                
                             </div>
                             <div className='max-w-sm mt-10 lg:mt-0 lg:ml-10 text-center text-gray-950'>
