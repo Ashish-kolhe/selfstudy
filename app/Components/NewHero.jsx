@@ -32,7 +32,7 @@ const NewHero = () => {
             <input
               type="text"
               placeholder="Search for a course..."
-              className="input input-bordered input-info w-full max-w-xl"
+              className="input input-bordered input-info w-full max-w-xl bg-white text-black"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />
@@ -47,7 +47,7 @@ const NewHero = () => {
               <div
                 key={card.id}
                 ref={(el) => (cardRefs.current[index] = el)}
-                className="card card-side bg-base-100 shadow-xl my-8"
+                className="card card-side bg-white text-gray-900 shadow-xl my-8"
               >
                 <figure>
                   <img

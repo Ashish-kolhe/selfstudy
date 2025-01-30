@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Faq = () => {
   return (
-    <div className='flex justify-center'>
+    <div className='flex justify-center bg-white text-gray-900'>
     <div className='max-w-4xl p-6 lg:p-10 '>
    
         <h1 className='text-gray-800 font-black text-xl lg:text-4xl text-center my-8'>Frequently Asked Questions</h1>

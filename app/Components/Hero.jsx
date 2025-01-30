@@ -8,10 +8,10 @@ const Hero = () => {
                     <div id='krypton' className="hero bg-white py-10  lg:p-10" >
                         <div className="hero-content flex-col px-10 lg:flex-row" >
                             <div  className='max-w-sm text-center lg:text-left' >
-                            <h1 className="text-6xl lg:text-8xl font-black text-gray-800"> <img src="./Dots.png" alt="" className=' -mb-96'/>Master Skills at Your Own Pace.</h1>
+                            <h1 className="text-6xl  lg:text-8xl font-black text-gray-800"> <img src="./Dots.png" alt="" className=' -mb-96'/>Master Skills at Your Own Pace.</h1>
                                
                             </div>
-                            <div className='max-w-sm mt-10 lg:mt-0 lg:ml-10 text-center'>
+                            <div className='max-w-sm mt-10 lg:mt-0 lg:ml-10 text-center text-gray-950'>
                                
                                <Link href="/browse"><button className='btn btn-wide btn-outline'> <img src="./google.png" alt="" className='w-8' />Continue with Google</button></Link> 
                                <Link href="/browse"> <button className='btn btn-wide btn-outline my-4'> <img src="./FB.png" alt="" className='w-10' />Continue with Facebook</button></Link> 
