@@ -20,7 +20,7 @@ const NAV2 = () => {
       </div>
       <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+        className="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow">
         <li>
           <a className="justify-between">
             Profile
@@ -29,7 +29,7 @@ const NAV2 = () => {
         </li>
         <li><a>Settings</a></li>
         <li><a>My Courses</a></li>
-        <li><a className='p-2 border-2 border-orange-600 '>Logout</a></li>
+        <li><a className='p-2 border-2 border-blue-600 '>Logout</a></li>
       </ul>
     </div>
   </div>
