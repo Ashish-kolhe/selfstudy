@@ -51,8 +51,8 @@ const NewHero = () => {
               >
                 <figure>
                   <img
-                    src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-                    alt={card.title}
+                    src="./full-moon.gif"
+                    alt={card.title} className="w-40 rounded-2xl"
                   />
                 </figure>
                 <div className="card-body">

@@ -16,7 +16,9 @@ const Hero = () => {
                                <Link href="/browse"><button className='btn btn-wide btn-outline text-gray-950'> <img src="./google.png" alt="" className='w-8' />Continue with Google</button></Link> 
                                <Link href="/browse"> <button className='btn btn-wide btn-outline text-gray-950 my-4'> <img src="./FB.png" alt="" className='w-10' />Continue with Facebook</button></Link> 
                                <Link href="/browse"> <button className='btn btn-wide btn-outline text-gray-950'>Continue with Email</button></Link> 
-                                <p className='my-8 text-xs font-bold text-gray-800'>By signing up you agree to SelfStudy's Terms of Service and Privacy Policy, and agree to receive marketing communications from SelfStudy at the email address provided.</p>
+                                <p className='my-8 text-xs font-bold text-gray-800'>By signing up you agree to <span className='text-blue-600 font-black'>SelfStudy's</span> Terms of Service and Privacy Policy, and agree to receive marketing communications from <span className='text-blue-600 font-black'>SelfStudy</span> at the email address provided.</p>
+                            
+                            <h1 className='flex justify-center'><img src="./Arrow.png" alt=""  className='w-36'/></h1>
                             </div>
                         </div>
                     </div>

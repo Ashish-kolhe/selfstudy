@@ -6,7 +6,7 @@ const NAV2 = () => {
    <div className="navbar bg-white text-gray-900 px-4">
   <div className="flex-1">
   <img className='w-10 lg:w-12 rounded-full m-1' src="./Logo.png" alt="" />
-  <a className="text-base lg:text-xl font-extrabold text-gray-800" >SelfStudy</a>
+  <a className="text-base lg:text-xl font-extrabold text-gray-800" href='/' >SelfStudy</a>
   </div>
   <div className="flex-none">
    
@@ -29,7 +29,7 @@ const NAV2 = () => {
         </li>
         <li><a>Settings</a></li>
         <li><a>My Courses</a></li>
-        <li><a className='p-2 border-2 border-blue-600 '>Logout</a></li>
+        <li><a className='p-2 border-2 border-blue-600 ' href='/'>Logout</a></li>
       </ul>
     </div>
   </div>
