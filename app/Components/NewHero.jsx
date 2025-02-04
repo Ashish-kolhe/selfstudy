@@ -23,7 +23,7 @@ const NewHero = () => {
         <input
           type="text"
           placeholder="Search for a course..."
-          className="input input-bordered w-full"
+          className="input input-info w-full bg-white"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />

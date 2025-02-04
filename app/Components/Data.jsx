@@ -57,13 +57,13 @@ export const Data = () => {
         resource.title.toLowerCase().includes(searchTerm.toLowerCase())
       );
       return (
-        <div className="min-h-screen bg-white my-5 mb-20">
+        <div className="min-h-screen bg-white py-5 pb-20">
           {/* Search Bar */}
           <div className="container mx-auto px-5 py-5 mb-10">
             <input
               type="text"
               placeholder="Search Resources..."
-              className="input input-bordered w-full"
+              className="input input-info bg-white w-full"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
