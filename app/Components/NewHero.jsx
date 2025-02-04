@@ -40,7 +40,7 @@ const NewHero = () => {
               <h2 className="card-title">{course.title}</h2>
               <p>{course.description}</p>
               <div className="card-actions justify-end">
-                <button className="btn btn-primary">Enroll</button>
+                <button className="py-2 px-5 border-2 border-blue-600 rounded-full text-sm font-bold text-white bg-blue-600">Enroll</button>
               </div>
             </div>
           </div>

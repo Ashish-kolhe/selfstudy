@@ -80,7 +80,7 @@ export const Data = () => {
                   <h2 className="card-title">{resource.title}</h2>
                   <p>{resource.description}</p>
                   <div className="card-actions justify-end lg:justify-center">
-                    <a href={resource.link} className="btn btn-primary">Download</a>
+                    <a href={resource.link} className="py-2 px-5 border-2 border-blue-600 rounded-full text-sm font-bold text-white bg-blue-600">Download</a>
                   </div>
                 </div>
               </div>
