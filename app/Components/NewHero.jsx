@@ -1,71 +1,50 @@
 "use client"
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 
 const NewHero = () => {
   const [search, setSearch] = useState("");
-  const cardRefs = useRef([]); // Store refs for each card
 
-  const cards = [
-    { id: 1, title: "React for Beginners", description: "Learn React from scratch!" },
-    { id: 2, title: "Advanced JavaScript", description: "Master JavaScript concepts." },
-    { id: 3, title: "UI/UX Design Fundamentals", description: "Improve your design skills." },
-    { id: 4, title: "Full-Stack Development", description: "Become a MERN stack expert." },
-    { id: 5, title: "Python for Data Science", description: "Analyze data with Python." },
+  const courses = [
+    { id: 1, title: "React for Beginners", description: "Learn React from scratch!", image: "./physics.gif", style: "bg-white border-l-4 border-blue-500" },
+    { id: 2, title: "Advanced JavaScript", description: "Master JavaScript concepts.", image: "./java.gif", style: "bg-white border-l-4 border-green-500" },
+    { id: 3, title: "UI/UX Design Fundamentals", description: "Improve your design skills.", image: "./ui.gif", style: "bg-white border-l-4 border-yellow-500" },
+    { id: 4, title: "Full-Stack Development", description: "Become a MERN stack expert.", image: "./website.gif", style: "bg-white border-l-4 border-red-500" },
+    { id: 5, title: "Python for Data Science", description: "Analyze data with Python.", image: "./analytics.gif", style: "bg-white border-l-4 border-purple-500" },
   ];
 
-  const handleSearch = () => {
-    const index = cards.findIndex((card) =>
-      card.title.toLowerCase().includes(search.toLowerCase())
-    );
-
-    if (index !== -1) {
-      cardRefs.current[index].scrollIntoView({ behavior: "smooth", block: "center" });
-    }
-  };
+  const filteredCourses = courses.filter(course =>
+    course.title.toLowerCase().includes(search.toLowerCase())
+  );
 
   return (
-    <div className="hero bg-white text-gray-800 min-h-screen">
-      <div className="hero-content text-center">
-        <div className="max-w-3xl">
-          {/* Search Bar */}
-          <div className="flex items-center gap-2">
-            <input
-              type="text"
-              placeholder="Search for a course..."
-              className="input input-bordered input-info w-full max-w-xl bg-white text-black"
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-            />
-            <button className="btn btn-outline btn-primary" onClick={handleSearch}>
-              Search
-            </button>
-          </div>
+    <div className="min-h-screen bg-white py-10">
+      {/* Search Bar */}
+      <div className="container mx-auto px-5 mb-10">
+        <input
+          type="text"
+          placeholder="Search for a course..."
+          className="input input-bordered w-full"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+      </div>
 
-          {/* Course Cards */}
-          <div className="mt-10">
-            {cards.map((card, index) => (
-              <div
-                key={card.id}
-                ref={(el) => (cardRefs.current[index] = el)}
-                className="card card-side bg-white text-gray-900 shadow-xl my-8"
-              >
-                <figure>
-                  <img
-                    src="./full-moon.gif"
-                    alt={card.title} className="w-40 rounded-2xl"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">{card.title}</h2>
-                  <p>{card.description}</p>
-                  <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Enroll</button>
-                  </div>
-                </div>
+      {/* Course Cards Section */}
+      <div className="container mx-auto px-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {filteredCourses.map((course) => (
+          <div key={course.id} className={`card shadow-xl hover:shadow-2xl transition duration-300 ${course.style}`}>
+            <figure>
+              <img src={course.image} alt={course.title} className="w-1/2 object-cover rounded-t-xl" />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">{course.title}</h2>
+              <p>{course.description}</p>
+              <div className="card-actions justify-end">
+                <button className="btn btn-primary">Enroll</button>
               </div>
-            ))}
+            </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );

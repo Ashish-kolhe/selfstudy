@@ -20,7 +20,7 @@ const Navbar = () => {
           </ul>
         </details>
       </li>
-      <li><a href='/browse'>Resources</a></li>
+      <li><a href='/resource'>Resources</a></li>
       
     </ul>
    
@@ -52,7 +52,7 @@ const Navbar = () => {
             
           </ul>
         </li>
-        <li><a href='/browse'>Resources</a></li>
+        <li><a href='/resource'>Resources</a></li>
       </ul>
     </div>
   </div>
